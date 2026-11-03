@@ -361,7 +361,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 942982980}
+  _pointableElement: {fileID: 0}
   _rigidbody: {fileID: 942982981}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
@@ -383,7 +383,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 942982980}
+  _pointableElement: {fileID: 0}
   _rigidbody: {fileID: 942982981}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
@@ -426,7 +426,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 942982981}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
@@ -969,15 +969,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4ae08ea1a2bf38846be5887ebbc161db, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ae08ea1a2bf38846be5887ebbc161db, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ae08ea1a2bf38846be5887ebbc161db, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ae08ea1a2bf38846be5887ebbc161db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1039,9 +1039,6 @@ PrefabInstance:
       addedObject: {fileID: 942982981}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ae08ea1a2bf38846be5887ebbc161db, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 942982980}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ae08ea1a2bf38846be5887ebbc161db, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 942982979}
   m_SourcePrefab: {fileID: 100100000, guid: 4ae08ea1a2bf38846be5887ebbc161db, type: 3}
 --- !u!1 &942982977 stripped
@@ -1075,29 +1072,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0034662024, y: 0.0034662024, z: 0.0113554355}
   m_Center: {x: 0, y: 0, z: -0.004779094}
---- !u!114 &942982980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942982977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 942982978}
-  _maxGrabPoints: -1
-  _rigidbody: {fileID: 942982981}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
-  _forceKinematicDisabled: 0
 --- !u!54 &942982981
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1532,7 +1506,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 942982980}
+  _pointableElement: {fileID: 0}
   _rigidbody: {fileID: 942982981}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
@@ -1554,7 +1528,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 942982980}
+  _pointableElement: {fileID: 0}
   _rigidbody: {fileID: 942982981}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
@@ -1597,7 +1571,7 @@ MonoBehaviour:
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 1328555147}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
@@ -1611,15 +1585,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9799e762702cbe241828731d8ca462c8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9799e762702cbe241828731d8ca462c8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9799e762702cbe241828731d8ca462c8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9799e762702cbe241828731d8ca462c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2099,7 +2073,7 @@ Transform:
   m_GameObject: {fileID: 1734527159}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.563, y: 0.431, z: -0.592}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2134,7 +2108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4397664628265918113, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.227
       objectReference: {fileID: 0}
     - target: {fileID: 4397664628265918113, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
       propertyPath: m_LocalPosition.z
