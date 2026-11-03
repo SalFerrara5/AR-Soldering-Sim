@@ -3148,8 +3148,8 @@ MonoBehaviour:
   AnswersC: {fileID: 2087661584}
   AnswersD: {fileID: 518787536}
   ShowAnswers: {fileID: 1076346824}
-  ButtonC: {fileID: 0}
-  ButtonD: {fileID: 0}
+  ButtonC: {fileID: 1809536391}
+  ButtonD: {fileID: 1809961508}
 --- !u!1001 &1107392524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5585,6 +5585,16 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!1 &1809536391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 243424268127923124, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
+  m_PrefabInstance: {fileID: 11400706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1809961508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 243424268127923124, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
+  m_PrefabInstance: {fileID: 1457769765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1813905004
 GameObject:
   m_ObjectHideFlags: 0
