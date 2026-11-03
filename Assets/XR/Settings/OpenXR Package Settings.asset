@@ -81,7 +81,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeef8d85de8db242bdda70cc7ff5acd, type: 3}
   m_Name: OculusTouchControllerProfile Standalone
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_enabled: 1
+=======
+  m_enabled: 0
+>>>>>>> 444d8a5eb7579df777aa23af81a3d0abfabcee95
   <failedInitialization>k__BackingField: 0
   nameUi: Oculus Touch Controller Profile
   version: 0.0.1
@@ -465,6 +469,8 @@ MonoBehaviour:
   - {fileID: 6936558416023888108}
   - {fileID: -417992350330382324}
   customLoaderName: 
+  m_eyeTrackingQuestPermissionsToRequest: com.oculus.permission.EYE_TRACKING
+  m_eyeTrackingAndroidXRPermissionsToRequest: android.permission.EYE_TRACKING_FINE
   m_renderMode: 1
   m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
@@ -475,6 +481,7 @@ MonoBehaviour:
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
   m_foveatedRenderingApi: 0
+  versionChanged: 0
 --- !u!114 &-3481661454556729459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,6 +546,8 @@ MonoBehaviour:
   - {fileID: 8306940746631892753}
   - {fileID: 4775200236346829795}
   customLoaderName: 
+  m_eyeTrackingQuestPermissionsToRequest: com.oculus.permission.EYE_TRACKING
+  m_eyeTrackingAndroidXRPermissionsToRequest: android.permission.EYE_TRACKING_FINE
   m_renderMode: 1
   m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
@@ -549,6 +558,7 @@ MonoBehaviour:
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
   m_foveatedRenderingApi: 0
+  versionChanged: 0
 --- !u!114 &-3108868858118914873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,6 +620,8 @@ MonoBehaviour:
   features:
   - {fileID: -8623737290874607640}
   customLoaderName: 
+  m_eyeTrackingQuestPermissionsToRequest: com.oculus.permission.EYE_TRACKING
+  m_eyeTrackingAndroidXRPermissionsToRequest: android.permission.EYE_TRACKING_FINE
   m_renderMode: 1
   m_latencyOptimization: 0
   m_autoColorSubmissionMode: 1
@@ -620,6 +632,7 @@ MonoBehaviour:
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
   m_foveatedRenderingApi: 0
+  versionChanged: 0
 --- !u!114 &-1734958692706058038
 MonoBehaviour:
   m_ObjectHideFlags: 0
