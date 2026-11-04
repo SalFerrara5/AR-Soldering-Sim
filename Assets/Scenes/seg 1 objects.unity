@@ -3544,7 +3544,7 @@ PrefabInstance:
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _surfacePatch
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1283539786}
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _positionPinning.Enabled
       value: 1
@@ -4929,7 +4929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2006984009905985374, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2121831639775495873, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: m_Name
@@ -4937,7 +4937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121831639775495873, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2214802932178273543, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _size.y
@@ -4945,7 +4945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2985808709450019793, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3563149335964526229, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: m_AnchorMax.y
