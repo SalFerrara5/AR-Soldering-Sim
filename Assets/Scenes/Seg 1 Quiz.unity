@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 243424268127923124, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 595206484569908514, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_text
       value: C
@@ -2621,7 +2625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Eiusmod tempor incididunt ut labore
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2902,7 +2906,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2427108063919276275, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_text
-      value: 
+      value: 'text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text
+        text '
       objectReference: {fileID: 0}
     - target: {fileID: 2427108063919276275, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_fontSize
@@ -2917,8 +2925,16 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2427108063919276275, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427108063919276275, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_enableAutoSizing
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427108063919276275, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 2427108063919276275, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -2966,11 +2982,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_text
-      value: Press any button to begin.
+      value: 'Burn Safety
+
+        <size=60%>If you get burned while soldering: turn
+        off the iron, put it safely in the holder, tell the instructor, and call
+        pubsafe or go to the health center as needed.
+
+        Also fill out an EHS
+        incident form:
+
+        ehs.rpi.edu/form/ehs-incident-report</size>'
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_fontSize
-      value: 12
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
+      propertyPath: m_margin.w
+      value: -8.958817
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
+      propertyPath: m_margin.y
+      value: -19.72568
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_fontStyle
@@ -2982,7 +3015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_fontSizeBase
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_TextWrappingMode
@@ -2991,6 +3024,10 @@ PrefabInstance:
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_enableAutoSizing
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -4232,6 +4269,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 243424268127923124, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 243424268127923124, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 595206484569908514, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
@@ -6184,7 +6225,7 @@ PrefabInstance:
     - target: {fileID: 2006984009905985374, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _surface
       value: 
-      objectReference: {fileID: 407423918}
+      objectReference: {fileID: 0}
     - target: {fileID: 2006984009905985374, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -6260,7 +6301,7 @@ PrefabInstance:
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _surfacePatch
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 407423918}
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _positionPinning.Enabled
       value: 1
