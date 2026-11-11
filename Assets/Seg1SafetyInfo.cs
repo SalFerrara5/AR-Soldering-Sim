@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class SolderingGallery : MonoBehaviour
+public class SolderingSafety : MonoBehaviour
 {
     [Header("UI References")]
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI subtitleText;
     public Image pictureImage;
 
-    [Tooltip("Optional: small text like 1/8")]
+    [Tooltip("Optional: small text like 1/9")]
     public TextMeshProUGUI counterText;
 
     [Header("Buttons (optional, hidden at the ends)")]
@@ -19,31 +19,34 @@ public class SolderingGallery : MonoBehaviour
     [Header("Options")]
     public bool loop = false;
 
-    [Header("Pictures (same order as the list below)")]
-    // 0 Solder Wire, 1 Soldering Iron, 2 Iron Holder, 3 Flux,
-    // 4 Fume Extractor, 5 Tip Cleaner, 6 PCB Board, 7 Components
-    public Sprite[] pictures = new Sprite[8];
+    [Header("Pictures (optional, same order as the list below)")]
+    // 0 Heat Safety, 1 Setting Up, 2 Proper PPE, 3 Clear Work Area,
+    // 4 Proper Ventilation, 5 Use Lead-Free Solder, 6 Putting It Away,
+    // 7 Cleanup and Waste, 8 More Information
+    public Sprite[] pictures = new Sprite[9];
 
     string[] titles = {
-        "Solder Wire",
-        "Soldering Iron",
-        "Soldering Iron Holder",
-        "Flux",
-        "Fume Extractor / Fan",
-        "Wet Sponge / Brass Wool Tip Cleaner",
-        "PCB Board",
-        "Resistor, Capacitor, LED"
+        "Heat Safety",
+        "Setting Up",
+        "Proper PPE",
+        "Clear Work Area",
+        "Proper Ventilation",
+        "Use Lead-Free Solder",
+        "Putting It Away",
+        "Cleanup and Waste",
+        "More Information"
     };
 
     string[] descriptions = {
-        "Metal alloy that melts to make an electrical or mechanical joint",
-        "Device that heats solder to use",
-        "Stand/holder to rest the hot iron",
-        "Cleans metal surface and helps solder bond",
-        "Pulls flux smoke away from your face",
-        "Clean solder tip",
-        "Printed Circuit Board is the electrical board that you are soldering",
-        "Electronic components that will be soldered to the PCB board"
+        "Lead-free solder tips reach 315-345°C (600-650°F). The red area on the iron is the hot part. Never touch it or the solder.",
+        "Make sure the electronics you're working on are unplugged and powered down. Check that power cords aren't frayed or in your way.",
+        "Wear long sleeves, long pants, and eye protection. Tie back long hair and remove necklaces and loose items.",
+        "Remove anything flammable from the area. No food or drink in the soldering area.",
+        "Turn on the fan or fume extractor before you begin soldering.",
+        "Solder with lead or lead oxide is not allowed at RPI. Only use lead-free solder.",
+        "Turn off the iron when you're not using it. Let it cool fully, then store it safely in its holder. Keep the cord clear of the hot tip.",
+        "Soldering waste is regulated and has specific disposal requirements. Wash your hands when you're done.",
+        "Visit ehs.rpi.edu or email EHS@rpi.edu."
     };
 
     int index = 0;
