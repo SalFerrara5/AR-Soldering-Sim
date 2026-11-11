@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ChangeQuestion2 : MonoBehaviour
+public class Seg1Quiz : MonoBehaviour
 {
     public TextMeshProUGUI Questions;
     public TextMeshProUGUI AnswersA;
@@ -25,15 +25,15 @@ public class ChangeQuestion2 : MonoBehaviour
         "Which are the proper PPE?",
         "T/F: The Soldering Iron can be left turned on if it is safely put in the holder.",
         "T/F: Solder with lead or lead oxide are allowed at RPI, but there are specific requirements to use it.",
-        "Burn Safety"   // short title; the long text lives in details below
+        "If you get burned:"   // short title; the long text lives in details below
     };
 
     // One entry per question; "" means no extra details.
     string[] details = {
         "", "", "", "", "",
-        "If you get burned while soldering: turn off the iron, put it safely in the holder, " +
-        "tell the instructor, and call pubsafe or go to the health center as needed.\n" +
-        "Also fill out an EHS incident form:\nehs.rpi.edu/form/ehs-incident-report"
+        "Turn off the iron, put it safely in the holder, " +
+        "tell the instructor, and call pubsafe orgo to the health center as needed.\n" +
+        "Fill out EHS incident form:\nehs.rpi.edu/form/ehs-incident-report"
     };
 
     string[][] answers = {

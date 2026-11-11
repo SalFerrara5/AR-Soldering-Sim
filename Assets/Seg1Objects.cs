@@ -41,7 +41,7 @@ public class SolderingGallery : MonoBehaviour
         "Stand/holder to rest the hot iron",
         "Cleans metal surface and helps solder bond",
         "Pulls flux smoke away from your face",
-        "Clean solder tip",
+        "Item to clean solder tip",
         "Printed Circuit Board is the electrical board that you are soldering",
         "Electronic components that will be soldered to the PCB board"
     };

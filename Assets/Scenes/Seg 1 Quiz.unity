@@ -798,7 +798,6 @@ GameObject:
   - component: {fileID: 302114717}
   - component: {fileID: 302114716}
   - component: {fileID: 302114715}
-  - component: {fileID: 302114714}
   m_Layer: 0
   m_Name: UIBackplate
   m_TagString: QDSUIBackplateGradient
@@ -826,18 +825,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 250}
   m_Pivot: {x: 1, y: 0}
---- !u!114 &302114714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302114712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6743f539aa7fad940a1a7fa78af3a35d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &302114715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2982,20 +2969,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_text
-      value: 'Burn Safety
+      value: 'If you get burned:
 
-        <size=60%>If you get burned while soldering: turn
-        off the iron, put it safely in the holder, tell the instructor, and call
-        pubsafe or go to the health center as needed.
+        <size=60%>Turn off the iron, put it safely
+        in the holder, tell the instructor, and call pubsafe orgo to the health center
+        as needed.
 
-        Also fill out an EHS
-        incident form:
+        Fill out EHS incident form:
 
         ehs.rpi.edu/form/ehs-incident-report</size>'
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_fontSize
-      value: 14
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_margin.w
@@ -3015,7 +3001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_fontSizeBase
-      value: 14
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3159214461815610380, guid: 51ba61fa774ccd14fb1f3743d17109a4, type: 3}
       propertyPath: m_TextWrappingMode
