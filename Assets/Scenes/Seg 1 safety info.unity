@@ -262,6 +262,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 243424268127923124, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 595206484569908514, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_text
       value: NEXT
@@ -1082,6 +1086,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b0af9ba8fd6574ba25058489938d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleText: {fileID: 340990651}
+  subtitleText: {fileID: 421872455}
+  pictureImage: {fileID: 2135382833}
+  counterText: {fileID: 0}
+  backButton: {fileID: 495444467}
+  nextButton: {fileID: 122945509}
+  loop: 0
+  pictures:
+  - {fileID: 21300000, guid: f5b1a8b14ed5ce7438234d7df03217c3, type: 3}
+  - {fileID: 21300000, guid: 6bed8b27759a01f478c514f7d6e5ecd0, type: 3}
+  - {fileID: 21300000, guid: 236572313e011e44ea4f14932d40615b, type: 3}
+  - {fileID: 21300000, guid: 2a7d3d9a2c554dd48be77e6f7a417126, type: 3}
+  - {fileID: 21300000, guid: 02b030fe1207f4d478617dabd2502dbb, type: 3}
+  - {fileID: 21300000, guid: 25f2a678d4bbeaf48b96ad87147c124a, type: 3}
+  - {fileID: 21300000, guid: fb22a9c6ed698d746936a2ddc672d939, type: 3}
+  - {fileID: 21300000, guid: b7b1bd630ef38f245b4187d51d73197e, type: 3}
+  - {fileID: 21300000, guid: 5f67b76c0b665c3489a5f438f894b432, type: 3}
 --- !u!1 &280325539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PCB Board
+  m_text: More Information
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1258,8 +1279,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 6
@@ -1630,7 +1651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Printed Circuit Board is the electrical board that you are soldering
+  m_text: Visit ehs.rpi.edu or email EHS@rpi.edu.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5447,7 +5468,7 @@ PrefabInstance:
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _surfacePatch
       value: 
-      objectReference: {fileID: 119356039}
+      objectReference: {fileID: 901622724}
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _positionPinning.Enabled
       value: 1
@@ -6008,7 +6029,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1dfab8c76ca62ad43a52ead6579ddad3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f67b76c0b665c3489a5f438f894b432, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6031,7 +6052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
-  m_MinWidth: 100
+  m_MinWidth: 140
   m_MinHeight: 100
   m_PreferredWidth: -1
   m_PreferredHeight: -1
