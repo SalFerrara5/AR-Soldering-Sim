@@ -1,109 +1,71 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class SolderingQuiz : MonoBehaviour
 {
-    [Header("UI References")]
-    public TextMeshProUGUI titleText;      // the question
-    public TextMeshProUGUI feedbackText;   // "Correct!" / "Not quite..."
+    public TextMeshProUGUI Questions;
+    public TextMeshProUGUI ShowAnswers;   // optional: running score
 
-    [Header("Answer Buttons (in order A, B, C, D)")]
-    // Set each button's picture by hand in the editor.
-    // A = Soldering Iron, B = Holder, C = Fume Extractor, D = PCB Board
-    public Button[] answerButtons = new Button[4];
-
-    [Header("Navigation")]
-    public GameObject nextButton;      // shown after answering
-    public GameObject restartButton;   // shown on the results screen
-
+    // Question order: fume extractor, soldering iron, PCB board, holder
+    // Letters: A = iron, B = holder, C = fume extractor, D = PCB board
     string[] questions = {
-        "Which one is the soldering iron?",
-        "Which one is the soldering iron holder?",
         "Which one is the fume extractor?",
-        "Which one is the PCB board?"
+        "Which physical asset is the soldering iron?",
+        "Which one is the PCB board?",
+        "Which physical asset is the soldering iron holder?"
     };
 
-    // Index of the correct button for each question (0 = A, 1 = B, 2 = C, 3 = D)
-    int[] correctAnswer = { 0, 1, 2, 3 };
+    // Correct answers in order: C, A, D, B
+    string[] key = { "C", "A", "D", "B" };
 
-    string[] letters = { "A", "B", "C", "D" };
-
-    int index = 0;
-    int score = 0;
-    bool answered = false;
+    int question_num = -1;
+    int correct = 0;
 
     void Start()
     {
-        for (int i = 0; i < answerButtons.Length; i++)
+        if (ShowAnswers != null) ShowAnswers.text = "0";
+        NextQuestion();
+    }
+
+    // Hook each button's OnClick to this, passing "A", "B", "C" or "D".
+    public void UpdateQuestionText(string AnswerText)
+    {
+        Debug.Log("Button pressed: " + AnswerText);
+
+        if (question_num >= 0 && question_num < questions.Length)
         {
-            int choice = i; // copy for the lambda
-            if (answerButtons[i] != null)
-                answerButtons[i].onClick.AddListener(() => Answer(choice));
+            if (AnswerText == key[question_num])
+            {
+                correct++;
+                if (ShowAnswers != null) ShowAnswers.text = correct.ToString();
+            }
+        }
+        NextQuestion();
+    }
+
+    // Right-click the component header while in Play mode to use these.
+    [ContextMenu("Test Press A")]
+    void TestPressA() { UpdateQuestionText("A"); }
+
+    [ContextMenu("Test Press B")]
+    void TestPressB() { UpdateQuestionText("B"); }
+
+    [ContextMenu("Test Press C")]
+    void TestPressC() { UpdateQuestionText("C"); }
+
+    [ContextMenu("Test Press D")]
+    void TestPressD() { UpdateQuestionText("D"); }
+
+    void NextQuestion()
+    {
+        question_num++;
+
+        if (question_num >= questions.Length)
+        {
+            Questions.text = "Quiz complete! Score: " + correct + "/" + questions.Length;
+            return;
         }
 
-        StartQuiz();
-    }
-
-    // Hook to the Restart button's OnClick.
-    public void StartQuiz()
-    {
-        score = 0;
-        SetAnswersVisible(true);
-        ShowQuestion(0);
-    }
-
-    // Hook to the Next button's OnClick.
-    public void Next()
-    {
-        if (index < questions.Length - 1) ShowQuestion(index + 1);
-        else ShowResults();
-    }
-
-    void ShowQuestion(int i)
-    {
-        index = i;
-        answered = false;
-
-        titleText.text = questions[index];
-        feedbackText.text = "";
-
-        foreach (Button b in answerButtons) b.interactable = true;
-        if (nextButton != null) nextButton.SetActive(false);
-        if (restartButton != null) restartButton.SetActive(false);
-    }
-
-    void Answer(int choice)
-    {
-        if (answered) return;
-        answered = true;
-
-        if (choice == correctAnswer[index])
-        {
-            score++;
-            feedbackText.text = "Correct!";
-        }
-        else
-        {
-            feedbackText.text = "Not quite. The answer is " + letters[correctAnswer[index]] + ".";
-        }
-
-        foreach (Button b in answerButtons) b.interactable = false;
-        if (nextButton != null) nextButton.SetActive(true);
-    }
-
-    void ShowResults()
-    {
-        titleText.text = "Quiz Complete!";
-        feedbackText.text = "You got " + score + " out of " + questions.Length + " correct.";
-
-        SetAnswersVisible(false);
-        if (nextButton != null) nextButton.SetActive(false);
-        if (restartButton != null) restartButton.SetActive(true);
-    }
-
-    void SetAnswersVisible(bool visible)
-    {
-        foreach (Button b in answerButtons) b.gameObject.SetActive(visible);
+        Questions.text = questions[question_num];
     }
 }

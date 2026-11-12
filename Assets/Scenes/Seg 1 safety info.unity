@@ -233,7 +233,7 @@ PrefabInstance:
     - target: {fileID: -2353561579252473944, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 340990649}
+      objectReference: {fileID: 0}
     - target: {fileID: -2353561579252473944, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
@@ -264,7 +264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 243424268127923124, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 595206484569908514, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_text
@@ -1177,7 +1177,7 @@ GameObject:
   - component: {fileID: 340990650}
   - component: {fileID: 340990652}
   - component: {fileID: 340990651}
-  - component: {fileID: 340990649}
+  - component: {fileID: 340990653}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -1185,34 +1185,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &340990649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340990648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76dfd8ee1565c644b98af8b6b7f4bebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleText: {fileID: 340990651}
-  subtitleText: {fileID: 421872455}
-  pictureImage: {fileID: 2135382833}
-  counterText: {fileID: 0}
-  backButton: {fileID: 495444467}
-  nextButton: {fileID: 122945509}
-  loop: 0
-  pictures:
-  - {fileID: 21300000, guid: 3353a212866a6944fb444bf2e3cab301, type: 3}
-  - {fileID: 21300000, guid: 4529f7af38101f448aaee07091574531, type: 3}
-  - {fileID: 21300000, guid: 6ef58b27608d803428bfcd3dc86784f9, type: 3}
-  - {fileID: 21300000, guid: 8652b6a607d16fd4d8e010248df2b226, type: 3}
-  - {fileID: 21300000, guid: 100280c4d7576884c843f13d1ccb5dec, type: 3}
-  - {fileID: 21300000, guid: f52802f63e897254089ad6d5aa2244ce, type: 3}
-  - {fileID: 21300000, guid: 1dfab8c76ca62ad43a52ead6579ddad3, type: 3}
-  - {fileID: 21300000, guid: 265988b4c8190f146aa22a5e946633de, type: 3}
 --- !u!224 &340990650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1252,7 +1224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Resistor, Capacitor, LED
+  m_text: Proper Ventilation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1332,6 +1304,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340990648}
   m_CullTransparentMesh: 1
+--- !u!114 &340990653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340990648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b0af9ba8fd6574ba25058489938d8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleText: {fileID: 340990651}
+  subtitleText: {fileID: 421872455}
+  pictureImage: {fileID: 2135382833}
+  counterText: {fileID: 0}
+  backButton: {fileID: 495444467}
+  nextButton: {fileID: 122945509}
+  loop: 0
+  pictures:
+  - {fileID: 21300000, guid: f5b1a8b14ed5ce7438234d7df03217c3, type: 3}
+  - {fileID: 21300000, guid: 6bed8b27759a01f478c514f7d6e5ecd0, type: 3}
+  - {fileID: 21300000, guid: 236572313e011e44ea4f14932d40615b, type: 3}
+  - {fileID: 21300000, guid: 2a7d3d9a2c554dd48be77e6f7a417126, type: 3}
+  - {fileID: 21300000, guid: 02b030fe1207f4d478617dabd2502dbb, type: 3}
+  - {fileID: 21300000, guid: 25f2a678d4bbeaf48b96ad87147c124a, type: 3}
+  - {fileID: 21300000, guid: fb22a9c6ed698d746936a2ddc672d939, type: 3}
+  - {fileID: 21300000, guid: b7b1bd630ef38f245b4187d51d73197e, type: 3}
+  - {fileID: 21300000, guid: 5f67b76c0b665c3489a5f438f894b432, type: 3}
 --- !u!1 &346605626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,7 +1652,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Electronic components that will be soldered to the PCB board
+  m_text: Turn on the fan or fume extractor before you begin soldering.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1942,7 +1943,7 @@ PrefabInstance:
     - target: {fileID: -2353561579252473944, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 340990649}
+      objectReference: {fileID: 0}
     - target: {fileID: -2353561579252473944, guid: 708bb04189b8488418aa725e7f94bbe8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 1
@@ -6029,7 +6030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 265988b4c8190f146aa22a5e946633de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 02b030fe1207f4d478617dabd2502dbb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
