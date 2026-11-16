@@ -9,10 +9,10 @@ public class SolderingQuiz : MonoBehaviour
     // Question order: fume extractor, soldering iron, PCB board, holder
     // Letters: A = iron, B = holder, C = fume extractor, D = PCB board
     string[] questions = {
-        "Which one is the fume extractor?",
-        "Which physical asset is the soldering iron?",
-        "Which one is the PCB board?",
-        "Which physical asset is the soldering iron holder?"
+        "Which is the fume extractor?",
+        "Which is the soldering iron?",
+        "Which is the PCB board?",
+        "Which is the soldering iron holder?"
     };
 
     // Correct answers in order: C, A, D, B
