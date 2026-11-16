@@ -4,11 +4,18 @@ public class CreateSolder : MonoBehaviour
 {
     public GameObject solder;
 
-    public Material render;
+    private Material render;
 
     bool soldering = false;
     float time = 0;
     public float time_solder_steps = 0.75F;
+
+    void Start()
+    {
+        // Accessing .material automatically creates a unique instance for this object
+        render = GetComponent<Renderer>().material;
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,7 +23,6 @@ public class CreateSolder : MonoBehaviour
      if (other.gameObject.tag == "Iron")
         {
             soldering = true;
-            Debug.Log(other.gameObject.tag);
             render.color = Color.red;
             CreateObject();
         }
@@ -27,7 +33,6 @@ public class CreateSolder : MonoBehaviour
         if (other.gameObject.tag == "Iron")
         {
             soldering = false;
-            Debug.Log(other.gameObject.tag);
             render.color = Color.blue;
         }
             
