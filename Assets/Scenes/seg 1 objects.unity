@@ -3039,7 +3039,7 @@ PrefabInstance:
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _surfacePatch
       value: 
-      objectReference: {fileID: 1283539786}
+      objectReference: {fileID: 0}
     - target: {fileID: 7479147155149179214, guid: 6b196de96e7d16b4297c1980179ae439, type: 3}
       propertyPath: _positionPinning.Enabled
       value: 1
